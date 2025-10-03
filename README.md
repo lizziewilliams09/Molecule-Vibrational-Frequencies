@@ -1,6 +1,6 @@
 # Vibrational Frequencies of N₂ and O₂ Molecules
 
-This repository contains code and data for simulating the vibrational motion of diatomic molecules (N₂ and O₂) using **Symplectic Euler** and **Velocity Verlet** time integration schemes. The project includes the production of separation and energy data, computation of wavenumbers, and comparison between purely vibrational motion and rotational/spin motion.
+This repository contains code and data for simulating the vibrational motion of diatomic molecules (N₂ and O₂) using Symplectic Euler and Velocity Verlet time integration schemes. The project includes the production of separation and energy data, computation of wavenumbers, and comparison between purely vibrational motion and rotational/spin motion.
 
 ---
 
@@ -39,7 +39,7 @@ Input files specify particle properties and initial conditions. Included are:
 * `oxygen.dat` / `oxygen_spin.dat`
 * `nitrogen.dat` / `nitrogen_spin.dat`
 
-The **spin** files introduce initial velocities in multiple dimensions (x and y), simulating rotational effects, whereas the non-spin files simulate purely vibrational motion (velocity only in x).
+The spin files introduce initial velocities in multiple dimensions (x and y), simulating rotational effects, whereas the non-spin files simulate purely vibrational motion (velocity only in x).
 
 ### Output Data
 
@@ -49,18 +49,18 @@ Running a simulation produces `.dat` files containing:
 * Separation between particles
 * Total energy
 
-These `.dat` files are **produced by the code** when running simulations; they are not included in the repository. Examples:
+These `.dat` files are produced by the code when running simulations; they are not included in the repository. Examples:
 
 * `verlet.dat` (Velocity Verlet output)
 * `euler.dat` (Symplectic Euler output)
 
-The Python code also produces **plots of separation vs time and total energy vs time** for immediate visualisation.
+The Python code also produces plots of separation vs time and total energy vs time for immediate visualisation.
 
 ---
 
 ## Report Analysis
 
-Further analysis for the report was performed in **Excel** (not included in this repository). This includes:
+Further analysis for the report was performed in Excel (not included in this repository). This includes:
 
 * **Time-step estimation**: identifying the optimal δt for ≤0.5% relative frequency error
 * **Energy inaccuracy assessment**: computing ΔE = max(E) - min(E)
@@ -85,7 +85,7 @@ The `.dat` files produced by the simulation can be plotted directly in Python or
 
 * **Separation vs time** (Python plot)
 * **Total energy vs time** (Python plot)
-* **Peak detection** (either in Python or Excel) to calculate vibrational periods and wavenumbers
+*  **Peak detection in Python**: used to calculate vibrational periods and wavenumbers from the separation data
 * Comparisons between purely vibrational and spin simulations (`*_spin.dat`)
 
 ---
@@ -101,7 +101,7 @@ The `.dat` files produced by the simulation can be plotted directly in Python or
 | `nitrogen.dat`         | Initial conditions for N₂ (vibrational only)            |
 | `nitrogen_spin.dat`    | Initial conditions for N₂ (including rotational motion) |
 
-**Note:** `.dat` output files (e.g., `verlet.dat`, `euler.dat`) are **produced when running simulations** and are not included in the repository.
+**Note:** `.dat` output files (e.g., `verlet.dat`, `euler.dat`) are produced when running simulations and are not included in the repository.
 
 ---
 
