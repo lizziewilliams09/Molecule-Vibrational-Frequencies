@@ -51,7 +51,7 @@ These `.dat` files are produced by the code when running simulations; they are n
 * `verlet.dat` (Velocity Verlet output)
 * `euler.dat` (Symplectic Euler output)
 
-The Python code also produces plots of separation vs time and total energy vs time for immediate visualisation.
+The Python code also produces plots of separation vs time and total energy vs time (and x and y positions of the particles vs time) for immediate visualisation.
 
 
 ## Report Analysis
