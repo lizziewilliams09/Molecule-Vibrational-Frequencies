@@ -143,6 +143,10 @@ def main():
     times = np.zeros(numstep)
     separations = np.zeros(numstep)
     energies = np.zeros(numstep)
+    positionsx = np.zeros(numstep)
+    positionsy = np.zeros(numstep)
+    positionsx2 = np.zeros(numstep)
+    positionsy2 = np.zeros(numstep)
 
     # Start the time integration loop
     for i in range(numstep):
@@ -190,6 +194,10 @@ def main():
         times[i] = time
         separations[i] = separation
         energies[i] = energy
+        positionsx[i] = p1.position[0]
+        positionsy[i] = p1.position[1]
+        positionsx2[i] = p2.position[0]
+        positionsy2[i] = p2.position[1]
 
     # Close the output file
     outfile.close()
@@ -215,6 +223,25 @@ def main():
     pyplot.ylabel("Energy (eV)")
     pyplot.plot(times, energies)
     pyplot.show()
+
+    # Plot x and y positions
+    
+    pyplot.figure()
+    pyplot.title(name + ": x position vs time of " + p1.label + " spin particle")
+    pyplot.xlabel("Time [T]")
+    pyplot.ylabel("Separation (angstroms)")
+    pyplot.plot(times, positionsx)
+    pyplot.plot(times, positionsx2)
+    pyplot.show()
+    
+    pyplot.figure()
+    pyplot.title(name + ": y position vs time of " + p1.label + " spin particle")
+    pyplot.xlabel("Time [T]")
+    pyplot.ylabel("Separation (angstroms)")
+    pyplot.plot(times, positionsy)
+    pyplot.plot(times, positionsy2)
+    pyplot.show()
+
 
     # calls wavenumber function to find and print the wavenumber value of the simulation
     wavenumber_value = wavenumber(separations, dt)
