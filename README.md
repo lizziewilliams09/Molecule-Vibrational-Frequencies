@@ -2,8 +2,6 @@
 
 This repository contains code and data for simulating the vibrational motion of diatomic molecules (N₂ and O₂) using Symplectic Euler and Velocity Verlet time integration schemes. The project includes the production of separation and energy data, computation of wavenumbers, and comparison between purely vibrational motion and rotational/spin motion.
 
----
-
 ## Table of Contents
 
 1. [Simulation Code](#simulation-code)
@@ -11,7 +9,6 @@ This repository contains code and data for simulating the vibrational motion of 
 3. [Files Included](#files-included)
 4. [Example Usage](#example-usage)
 
----
 
 ## Simulation Code
 
@@ -56,7 +53,6 @@ These `.dat` files are produced by the code when running simulations; they are n
 
 The Python code also produces plots of separation vs time and total energy vs time for immediate visualisation.
 
----
 
 ## Report Analysis
 
@@ -88,8 +84,6 @@ The `.dat` files produced by the simulation can be plotted directly in Python or
 *  **Peak detection in Python**: used to calculate vibrational periods and wavenumbers from the separation data
 * Comparisons between purely vibrational and spin simulations (`*_spin.dat`)
 
----
-
 ## Files Included
 
 | File                   | Description                                             |
@@ -103,7 +97,6 @@ The `.dat` files produced by the simulation can be plotted directly in Python or
 
 **Note:** `.dat` output files (e.g., `verlet.dat`, `euler.dat`) are produced when running simulations and are not included in the repository.
 
----
 
 ## Example Usage
 
