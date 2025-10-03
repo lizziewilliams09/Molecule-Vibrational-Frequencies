@@ -81,6 +81,7 @@ The `.dat` files produced by the simulation can be plotted directly in Python or
 
 * **Separation vs time** (Python plot)
 * **Total energy vs time** (Python plot)
+* **x/y positions vs time** (Python plot): particularly meaningful for spin input files
 *  **Peak detection in Python**: used to calculate vibrational periods and wavenumbers from the separation data
 * Comparisons between purely vibrational and spin simulations (`*_spin.dat`)
 
